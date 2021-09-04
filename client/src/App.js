@@ -15,7 +15,6 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
 import SingleThought from './pages/SingleThought';
-import profile from './pages/Profile';
 import Signup from './pages/Signup';
 import Profile from './pages/Profile';
 
@@ -39,8 +38,8 @@ function App() {
               <Route exact path ="/" component={Home} />
               <Route exact path ="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
-              <Route exact path="/profile" component={Profile} />
-              <Route exact path="/thought" component={SingleThought} />
+              <Route exact path="/profile/:username?" component={Profile} />
+              <Route exact path="/thought/:id" component={SingleThought} />
               <Route component={NoMatch} />
             </Switch>
           </div>
